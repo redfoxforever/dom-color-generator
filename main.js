@@ -32,22 +32,8 @@ let randomNum3 = function () {
     return Math.floor(Math.random() * 360) + 1
 }
 
-let randomNum4 = function () {
-    return Math.floor(Math.random() * 99) + 1
-}
-
-let hexString = "0123456789abcdef";
-
-let randomColor = () => {
-    let hexCode = "#";
-    for (let y = 0; y < 6; y++){
-        hexCode += hexString[Math.floor(Math.random() * hexString.length)];
-    }
-    return hexCode;
-}
-
 for (let k = 0; k < item2.length; k++) {
     item2[k].addEventListener("click", () => {
-        item2[k].style.background = `linear-gradient(${randomNum3()}deg, ${randomColor()}, ${randomColor()})`
+        item2[k].style.background = `linear-gradient(${randomNum3()}deg, rgba(${randomNum1()}, ${randomNum1()}, ${randomNum1()}, .${randomNum2()}), rgba(${randomNum1()}, ${randomNum1()}, ${randomNum1()}, .${randomNum2()}))`
     })
 }
