@@ -12,12 +12,12 @@ let randomNum1 = function () {
 }
 
 let randomNum2 = function () {
-    return Math.floor(Math.random() * 9) + 1
+    return Math.floor(Math.random() * 999) + 1
 }
 
 for (let i = 0; i < item1.length; i++) {
     item1[i].addEventListener("click", () => {
-        item1[i].style.background = `rgba(${randomNum1()}, ${randomNum1()}, ${randomNum1()}, .${randomNum2()})`
+        item1[i].style.background = `rgba(${randomNum1()}, ${randomNum1()}, ${randomNum1()}, 0.${randomNum2()})`
     })    
 }
 
