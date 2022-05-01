@@ -2,9 +2,8 @@
 
 'use strict'
 
-let item1 = document.querySelectorAll(".item1")
-let item2 = document.querySelectorAll(".item2")
-
+let item1 = [...document.querySelectorAll(".item1")]
+let item2 = [...document.querySelectorAll(".item2")]
 
 // top Random Colors start
 
