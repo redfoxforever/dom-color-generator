@@ -33,6 +33,6 @@ let randomNum3 = function () {
 
 for (let k = 0; k < item2.length; k++) {
     item2[k].addEventListener("click", () => {
-        item2[k].style.background = `linear-gradient(${randomNum3()}deg, rgba(${randomNum1()}, ${randomNum1()}, ${randomNum1()}, .${randomNum2()}), rgba(${randomNum1()}, ${randomNum1()}, ${randomNum1()}, .${randomNum2()}))`
+        item2[k].style.background = `linear-gradient(${randomNum3()}deg, rgba(${randomNum1()}, ${randomNum1()}, ${randomNum1()}, 0.${randomNum2()}), rgba(${randomNum1()}, ${randomNum1()}, ${randomNum1()}, 0.${randomNum2()}))`
     })
 }
